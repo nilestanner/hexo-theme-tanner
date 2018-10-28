@@ -1,11 +1,11 @@
 $background: #FFF;
 $primary-brand: #03B2FF;
 $primary-text: rgba(0, 0, 0, 0.5);
-$post-title: #5f5f5f;
+$post-title: #575857;
 $link-visited: #424242;
 $link-nav: #5A5A5A;
 $primary-border: #f2f2f2;
-$side-bar-text: #565654;
+$side-bar-text: #575857;
 $secondary-title: #464646;
 
 html {
@@ -201,7 +201,6 @@ a:hover, a:active {
 }
 .sidebar {
 	width: 25%;
-	padding: 16px;
 	-webkit-background-size: cover;
 	background-size: cover;
 	background-color: $background;
@@ -221,6 +220,9 @@ a:hover, a:active {
 		.description {
 			font-size: 14px;
 			color: $side-bar-text;
+			p {
+				padding:0px 16px;
+			}
 		}
 
 
@@ -230,6 +232,7 @@ a:hover, a:active {
 
 		.title{
 			h3 {
+				padding:0px 16px;
 				text-transform: uppercase;
 				font-size: 2rem;
 				font-weight: bold;
