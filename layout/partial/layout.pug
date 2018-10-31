@@ -13,3 +13,9 @@ html(lang="en")
     script(src= url_for('js/jquery.js'))
     script(src= url_for('js/jquery-migrate-1.2.1.min.js'))
     script(src= url_for('js/jquery.appear.js'))
+    script(src='https://www.googletagmanager.com/gtag/js?id=UA-24263392-8')
+    script.
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-24263392-8');
