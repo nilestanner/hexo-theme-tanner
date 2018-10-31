@@ -2,19 +2,31 @@
   .nav
     li
       if is_home()
-        a.current(href="/")= __('Home')
+        a.current(href="/")
+          i.fas.fa-home
+          span   Home
       else
-        a(href="/")= __('Home')
+        a(href="/")
+          i.fas.fa-home
+          span   Home
     li
       if is_current('about')
-        a.current(href="/about")= __('About')
+        a.current(href="/about")
+          i.fas.fa-user
+          span   About
       else
-        a(href="/about")= __('About')
+        a(href="/about")
+          i.fas.fa-user
+          span   About
     li
       if is_archive()
-        a.current(href="/archives")= __('Archive')
+        a.current(href="/archives")
+          i.fas.fa-archive
+          span   Archive
       else
-        a(href="/archives")= __('Archive')
+        a(href="/archives")
+          i.fas.fa-archive
+          span   Archive
   .information
     .back_btn
       li
@@ -23,5 +35,5 @@
         else
           a.fa.fa-chevron-left(onclick="window.history.go(-1)",style="display:none;")
     .avatar
-      a(href="/") 
+      a(href="/")
         img(src=theme.avatar)

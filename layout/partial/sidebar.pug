@@ -9,28 +9,33 @@
           p= theme.description
 
   ul.social-links
-    if theme.twitter
-      li
-        a(href="https://twitter.com/" + theme.twitter)
-          i.fa.fa-twitter
-    if theme.instagram
-      li
-        a(href="http://instagram.com/" + theme.instagram)
-          i.fa.fa-instagram
-    if theme.rss
-      li
-        a(href= url_for(theme.rss))
-          i.fa.fa-rss
-    if theme.weibo
-      li
-        a(href="http://weibo.com/" + theme.weibo)
-          i.fa.fa-weibo
-    if theme.facebook
-      li
-        a(href="http://facebook.com/" + theme.facebook)
-          i.fa.fa-facebook
     if theme.github
-      li
+      li(title='Github')
         a(href="http://github.com/" + theme.github)
-          i.fa.fa-github
+          i.fab.fa-github.fa-2x
+    if theme.stackoverflow
+      li(title='Stack Overflow')
+        a(href="https://stackoverflow.com/users/" + theme.stackoverflow)
+          i.fab.fa-stack-overflow.fa-2x
+    if theme.codepen
+      li(title='Codepen')
+        a(href="https://codepen.io/" + theme.codepen)
+          i.fab.fa-codepen.fa-2x
+    if theme.linkedin
+      li(title='Linkedin')
+        a(href="https://www.linkedin.com/in/" + theme.linkedin)
+          i.fab.fa-linkedin-in.fa-2x
+    if theme.twitter
+      li(title='Twitter')
+        a(href="https://twitter.com/" + theme.twitter)
+          i.fab.fa-twitter.fa-2x
+    if theme.website
+      li(title='Personal Website')
+        a(href="https://www.nilestanner.com/")
+          i.fas.fa-link.fa-2x
+    if theme.rss
+      li(title='RSS Feed')
+        a(href= url_for(theme.rss))
+          i.fa.fa-rss.fa-2x
+
   include footer
