@@ -37,6 +37,11 @@ a:hover, a:active {
   color: #03B2FF;
 }
 
+img[src$=centerme] {
+  display: block;
+  margin: 0 auto;
+}
+
 /*basic styles ends*/
 /*animation starts*/
 .animated {
