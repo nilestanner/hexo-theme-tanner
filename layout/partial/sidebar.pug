@@ -4,9 +4,9 @@
       img(src= url_for('images/logo@2x.png'),style="width:150px;")
       h3(title="")
         a(href="/")= config.title
-      if theme.description
+      if theme.subtitle
         .description
-          p= theme.description
+          p= theme.subtitle
 
   ul.social-links
     if theme.github
